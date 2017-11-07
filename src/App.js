@@ -5,10 +5,15 @@ import Cartpage from './CartPage';
 
 class App extends Component {
   render() {
-    const products=[{ 
-      'SKU': '23455',
-      'Price': '67',
-      'ProductId': 'No2'
+    const products=[{            // Provide product details in an impressionFieldObject.
+      'id': 'P12345',                   // Product ID (string).
+      'name': 'Android Warhol T-Shirt', // Product name (string).
+      'category': 'Apparel/T-Shirts',   // Product category (string).
+      'brand': 'Google',                // Product brand (string).
+      'variant': 'Black',               // Product variant (string).
+      'list': 'Search Results',         // Product list (string).
+      'position': 1,                    // Product position (number).
+      'dimension1': 'Member'            // Custom dimension (string).
     }]
     return (
       <div className="App">

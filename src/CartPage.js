@@ -3,7 +3,7 @@ import withGaWrapper from './GaWrapper';
 
 const CartPage = ({ products, sendGaEcommerce }) => {
     const product = products[0];
-    sendGaEcommerce(products);
+    sendGaEcommerce();
     return (
         <div>
             <p>Product's SKU is {product.SKU}</p>
