@@ -5,16 +5,26 @@ import Cartpage from './CartPage';
 
 class App extends Component {
   render() {
-    const products=[{            // Provide product details in an impressionFieldObject.
-      'id': 'P12345',                   // Product ID (string).
-      'name': 'Android Warhol T-Shirt', // Product name (string).
-      'category': 'Apparel/T-Shirts',   // Product category (string).
-      'brand': 'Google',                // Product brand (string).
-      'variant': 'Black',               // Product variant (string).
-      'list': 'Search Results',         // Product list (string).
-      'position': 1,                    // Product position (number).
-      'dimension1': 'Member'            // Custom dimension (string).
-    }]
+    const products = [
+      {
+        'id': 'P11111',
+        'name': 'IOS Warhol T-Shirt',
+        'category': 'Apparel/T-Shirts',
+        'brand': 'Apple',
+        'variant': 'Red',
+        'list': 'Search Results',
+        'position': 2,
+        'dimension1': 'Member'
+      }, {
+        'id': 'P12345',
+        'name': 'Android Warhol T-Shirt',
+        'category': 'Apparel/T-Shirts',
+        'brand': 'Google',
+        'variant': 'Black',
+        'list': 'Search Results',
+        'position': 1,
+        'dimension1': 'Member'
+      }]
     return (
       <div className="App">
         <header className="App-header">

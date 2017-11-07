@@ -2,13 +2,13 @@ import React from 'react';
 import withGaWrapper from './GaWrapper';
 
 const CartPage = ({ products, sendGaEcommerce }) => {
-    const product = products[0];
-    sendGaEcommerce();
+    sendGaEcommerce(products);
+    const product = products[0]
     return (
         <div>
-            <p>Product's SKU is {product.SKU}</p>
-            <p>Product's price is {product.Price}</p>
-            <p>Product's productId is {product.ProductId}</p>
+            <p>Product's name is {product.name}</p>
+            <p>Product's productId is {product.id}</p>
+            <p>Product's category is {product.category}</p>
         </div>
     )
 }
